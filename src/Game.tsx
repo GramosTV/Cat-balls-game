@@ -398,6 +398,7 @@ export const Game = () => {
                 cursor: 'pointer',
                 marginBottom: 8,
                 backgroundImage: 'url(./img/bg.png)',
+                userSelect: 'none',
               }}
             >
               Drop Ball
