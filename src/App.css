@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+  font-family: 'Akaya Kanadaka', 'sans-serif';
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +44,7 @@
   to {
     transform: rotate(360deg);
   }
+}
+#points {
+  font-family: 'Press Start 2P';
 }
