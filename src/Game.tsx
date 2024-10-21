@@ -67,7 +67,14 @@ export const Game = () => {
         wireframes: false, // Set to true to see wireframes for debugging
       },
     });
+    const context = render.canvas.getContext('2d', { antialias: true });
 
+    if (context instanceof CanvasRenderingContext2D) {
+      // Assign the context only if it's a valid 2D context
+      render.context = context;
+    } else {
+      console.error('Failed to retrieve a 2D context');
+    }
     // Create static bodies for the ground and walls
 
     let ground = Matter.Bodies.rectangle(width * 0.5, height * 0.74, width * 0.63, height * 0.08, {
